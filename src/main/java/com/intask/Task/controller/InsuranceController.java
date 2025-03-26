@@ -29,7 +29,7 @@ public class InsuranceController {
     public final UserServices userServices;
 
     // Get All Insurances
-    @GetMapping
+    @GetMapping("/getAll")
     public ResponseEntity<?> getAllInsurances() {
         ResponseEntity<List<?>> allInsurances = insuranceService.getAllInsurances();
         return ResponseEntity.ok(allInsurances);
